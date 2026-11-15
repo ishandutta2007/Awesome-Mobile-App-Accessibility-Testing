@@ -1,17 +1,27 @@
 # Awesome Mobile App Accessibility Testing 📱♿🧪
 
-[![Awesome](https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)
-[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/jc4xtF58Ve)
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg?style=flat-square)](https://creativecommons.org/publicdomain/zero/1.0/)
-[![Follow @ishandutta2007](https://img.shields.io/github/followers/ishandutta2007?label=Follow&style=social)](https://github.com/ishandutta2007)
+<p align="center">
+  <img src="./assets/banner.svg" alt="Awesome Mobile App Accessibility Testing Banner" width="100%" />
+</p>
 
-> A curated list of top **Mobile App Accessibility Testing** platforms, automated frameworks, and developer audit tools — both enterprise SaaS solutions and open-source libraries for detecting WCAG 2.1/2.2 violations, screen reader issues (TalkBack & VoiceOver), color contrast gaps, and touch target size defects in native iOS, Android, Flutter, and React Native applications.
->
-> 🌟 *Star this repository if you find it helpful!* 🌟
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Mobile-App-Accessibility-Testing/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Mobile-App-Accessibility-Testing?style=social&color=white" alt="Repo Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Mobile-App-Accessibility-Testing/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Mobile-App-Accessibility-Testing?style=social&color=white" alt="Repo Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Mobile-App-Accessibility-Testing/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg?style=flat-square" alt="License: CC0-1.0"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub follwwers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
-## 📋 Table of Contents
+> 🚀 **The definitive curated guide to Mobile App Accessibility Testing.** Explore top-tier cloud enterprise SaaS testing suites and battle-tested open-source libraries for detecting WCAG 2.1 & 2.2 violations, screen reader issues (TalkBack & VoiceOver), color contrast gaps, focus traversal bugs, and touch target size defects across native iOS, Android, Flutter, and React Native applications.
+>
+> 🌟 *Star this repository to stay up-to-date with emerging mobile a11y tools and audit frameworks!* 🌟
+
+---
+
+## 📑 Table of Contents
 
 - [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
 - [🟦 SaaS / Hosted Commercial Platforms](#-saas--hosted-commercial-platforms)
@@ -28,6 +38,8 @@
   - [10. Android Accessibility Scanner](#10-android-accessibility-scanner)
 - [📊 Feature Comparison at a Glance](#-feature-comparison-at-a-glance)
 - [🤝 Contributing](#-contributing)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
 - [📄 License](#-license)
 
 ---
@@ -204,9 +216,19 @@ Please ensure submitted tools are actively maintained, include clear licensing, 
 
 ---
 
-## 📈 Star History
+## 💖 Support & Sponsorship
 
-[![Star History Chart](https://api.star-history.com/svg?repos=ishandutta2007/Awesome-Mobile-App-Accessibility-Testing&type=Date)](https://star-history.com/#ishandutta2007/Awesome-Mobile-App-Accessibility-Testing&Date)
+If this curated repository saved you research time or assisted in choosing the right mobile accessibility testing solution for your team, please consider supporting the project:
+
+- ⭐ **Star this repository** to help others discover it.
+- 🍴 **Fork and contribute** your own insights, tools, or audit frameworks.
+- 📢 **Share with fellow mobile engineers, QA testers, and accessibility advocates.**
+- ☕ **Buy me a coffee / Sponsor:** Support ongoing maintenance via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+##  Star History
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Mobile-App-Accessibility-Testing&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Mobile-App-Accessibility-Testing&type=date&legend=top-left)
 
 ---
 

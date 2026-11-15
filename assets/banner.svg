@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#080c14" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.07)" />
+      <stop offset="100%" stop-color="rgba(255, 255, 255, 0.02)" />
+    </linearGradient>
+
+    <radialGradient id="glowCyan" cx="20%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="rgba(56, 189, 248, 0.18)" />
+      <stop offset="100%" stop-color="rgba(56, 189, 248, 0)" />
+    </radialGradient>
+
+    <radialGradient id="glowIndigo" cx="80%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="rgba(129, 140, 248, 0.18)" />
+      <stop offset="100%" stop-color="rgba(129, 140, 248, 0)" />
+    </radialGradient>
+
+    <!-- Filters for Glow & Shadows -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.45" />
+    </filter>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.65; transform: scale(1.04); }
+      }
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes floatReverse {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(8px); }
+      }
+      @keyframes shimmer {
+        0% { stroke-dashoffset: 400; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes scanline {
+        0% { transform: translateY(-40px); opacity: 0; }
+        20% { opacity: 0.8; }
+        80% { opacity: 0.8; }
+        100% { transform: translateY(220px); opacity: 0; }
+      }
+      .anim-glow {
+        animation: pulseGlow 6s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .anim-float1 {
+        animation: floatSlow 5s ease-in-out infinite;
+      }
+      .anim-float2 {
+        animation: floatReverse 6s ease-in-out infinite;
+      }
+      .anim-scan {
+        animation: scanline 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+      .shimmer-line {
+        stroke-dasharray: 200;
+        animation: shimmer 8s linear infinite;
+      }
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        fill: #ffffff;
+        letter-spacing: -0.5px;
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        fill: #94a3b8;
+      }
+      .badge-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Dynamic Ambient Glow Blobs -->
+  <circle cx="240" cy="140" r="280" fill="url(#glowCyan)" class="anim-glow" />
+  <circle cx="960" cy="280" r="300" fill="url(#glowIndigo)" class="anim-glow" style="animation-delay: -3s;" />
+
+  <!-- Subtle High-Tech Circuit / Grid Trace Lines in Background -->
+  <g opacity="0.15" stroke="#38bdf8" stroke-width="1.2" fill="none">
+    <path d="M 50 80 H 300 L 340 120 H 600" />
+    <path d="M 800 60 H 980 L 1020 100 H 1150" />
+    <path d="M 100 360 H 260 L 300 320 H 500" />
+    <path d="M 750 340 H 900 L 940 380 H 1100" />
+    <circle cx="340" cy="120" r="3" fill="#38bdf8" />
+    <circle cx="1020" cy="100" r="3" fill="#818cf8" />
+    <circle cx="300" cy="320" r="3" fill="#38bdf8" />
+    <circle cx="940" cy="380" r="3" fill="#c084fc" />
+  </g>
+
+  <!-- Left Dynamic Element: Mobile Phone Wireframe with A11y Scanner Grid -->
+  <g class="anim-float1" transform="translate(60, 65)">
+    <!-- Device Body -->
+    <rect x="0" y="0" width="150" height="290" rx="28" fill="#131c2e" stroke="rgba(56, 189, 248, 0.4)" stroke-width="2" filter="url(#shadow)" />
+    <!-- Screen -->
+    <rect x="8" y="14" width="134" height="262" rx="20" fill="#090d16" />
+    <!-- Dynamic Scanner Bar -->
+    <g class="anim-scan">
+      <rect x="12" y="40" width="126" height="3" fill="url(#accentGrad)" filter="url(#glow)" />
+      <polygon points="12,43 138,43 130,58 20,58" fill="url(#glowCyan)" opacity="0.3" />
+    </g>
+    <!-- Mock UI Elements being audited -->
+    <rect x="22" y="40" width="106" height="28" rx="6" fill="#1e293b" />
+    <circle cx="36" cy="54" r="7" fill="#38bdf8" />
+    <rect x="52" y="49" width="60" height="10" rx="3" fill="#475569" />
+    
+    <!-- Target Box Pass / Warning Markers -->
+    <rect x="22" y="80" width="50" height="48" rx="6" fill="#1e293b" stroke="#4ade80" stroke-width="1.5" stroke-dasharray="3 2" />
+    <text x="32" y="108" fill="#4ade80" font-family="sans-serif" font-size="11" font-weight="bold">48dp</text>
+    <rect x="78" y="80" width="50" height="48" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3 2" />
+    <text x="92" y="108" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="bold">AAA</text>
+
+    <rect x="22" y="140" width="106" height="44" rx="8" fill="rgba(129, 140, 248, 0.12)" stroke="rgba(129, 140, 248, 0.3)" />
+    <text x="34" y="166" fill="#c7d2fe" font-family="sans-serif" font-size="12" font-weight="bold">TalkBack 🔊</text>
+
+    <rect x="22" y="196" width="106" height="34" rx="8" fill="rgba(192, 132, 252, 0.12)" stroke="rgba(192, 132, 252, 0.3)" />
+    <text x="34" y="218" fill="#e9d5ff" font-family="sans-serif" font-size="12" font-weight="bold">VoiceOver 👁️</text>
+
+    <!-- Home Indicator -->
+    <rect x="50" y="266" width="50" height="4" rx="2" fill="#64748b" />
+  </g>
+
+  <!-- Right Dynamic Element: Interactive A11y Metrics Card -->
+  <g class="anim-float2" transform="translate(970, 75)">
+    <rect x="0" y="0" width="170" height="270" rx="18" fill="#131c2e" stroke="rgba(129, 140, 248, 0.35)" stroke-width="1.5" filter="url(#shadow)" />
+    <text x="18" y="32" fill="#818cf8" font-family="sans-serif" font-size="13" font-weight="bold">COMPLIANCE</text>
+    <text x="18" y="58" fill="#ffffff" font-family="sans-serif" font-size="24" font-weight="800">WCAG 2.2</text>
+    
+    <!-- Checklist items with checkmarks -->
+    <g transform="translate(18, 80)">
+      <circle cx="8" cy="8" r="8" fill="#22c55e" opacity="0.2" />
+      <path d="M 5 8 L 8 11 L 12 5" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" />
+      <text x="24" y="12" fill="#cbd5e1" font-family="sans-serif" font-size="12">Contrast 7:1</text>
+    </g>
+
+    <g transform="translate(18, 115)">
+      <circle cx="8" cy="8" r="8" fill="#22c55e" opacity="0.2" />
+      <path d="M 5 8 L 8 11 L 12 5" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" />
+      <text x="24" y="12" fill="#cbd5e1" font-family="sans-serif" font-size="12">Touch ≥ 48dp</text>
+    </g>
+
+    <g transform="translate(18, 150)">
+      <circle cx="8" cy="8" r="8" fill="#22c55e" opacity="0.2" />
+      <path d="M 5 8 L 8 11 L 12 5" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" />
+      <text x="24" y="12" fill="#cbd5e1" font-family="sans-serif" font-size="12">Screen Readers</text>
+    </g>
+
+    <g transform="translate(18, 185)">
+      <circle cx="8" cy="8" r="8" fill="#22c55e" opacity="0.2" />
+      <path d="M 5 8 L 8 11 L 12 5" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" />
+      <text x="24" y="12" fill="#cbd5e1" font-family="sans-serif" font-size="12">Focus Traversal</text>
+    </g>
+
+    <g transform="translate(18, 220)">
+      <circle cx="8" cy="8" r="8" fill="#38bdf8" opacity="0.2" />
+      <path d="M 5 8 L 8 11 L 12 5" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" />
+      <text x="24" y="12" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="600">Zero Regression</text>
+    </g>
+  </g>
+
+  <!-- FOREGROUND: Center Main Title & Branding (Permanently High Contrast & Unobstructed) -->
+  <g transform="translate(600, 140)" text-anchor="middle">
+    <!-- Top Pill Badge -->
+    <rect x="-150" y="-72" width="300" height="34" rx="17" fill="url(#cardGrad)" stroke="rgba(56, 189, 248, 0.45)" stroke-width="1.2" />
+    <text x="0" y="-50" fill="#38bdf8" class="badge-text" text-anchor="middle">📱 INCLUSIVE MOBILE ENGINEERING ♿</text>
+
+    <!-- Main Title with Gradient Fill -->
+    <text x="0" y="2" class="title-text" font-size="44" filter="url(#shadow)">
+      Awesome Mobile App
+    </text>
+    <text x="0" y="52" class="title-text" font-size="44" fill="url(#accentGrad)" filter="url(#shadow)">
+      Accessibility Testing
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="100" class="subtitle-text" font-size="16" letter-spacing="0.2">
+      Curated Cloud SaaS Suites, On-Device Engines &amp; Open-Source A11y Frameworks
+    </text>
+    <text x="0" y="126" class="subtitle-text" font-size="14" fill="#64748b">
+      iOS • Android • Jetpack Compose • SwiftUI • Flutter • React Native • WCAG 2.2
+    </text>
+
+    <!-- Interactive Tech Badges Group in Foreground -->
+    <g transform="translate(0, 160)">
+      <!-- Badge 1: iOS -->
+      <g transform="translate(-180, 0)">
+        <rect x="-45" y="-14" width="90" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="0" y="4" fill="#93c5fd" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle">🍎 iOS</text>
+      </g>
+      <!-- Badge 2: Android -->
+      <g transform="translate(-80, 0)">
+        <rect x="-50" y="-14" width="100" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="0" y="4" fill="#86efac" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle">🤖 Android</text>
+      </g>
+      <!-- Badge 3: WCAG 2.2 -->
+      <g transform="translate(30, 0)">
+        <rect x="-55" y="-14" width="110" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="0" y="4" fill="#fde047" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle">🎯 WCAG 2.2</text>
+      </g>
+      <!-- Badge 4: A11y CI/CD -->
+      <g transform="translate(150, 0)">
+        <rect x="-60" y="-14" width="120" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="0" y="4" fill="#f472b6" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle">⚡ CI/CD A11y</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Border Outline -->
+  <rect x="0.5" y="0.5" width="1199" height="419" rx="16" fill="none" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+</svg>
