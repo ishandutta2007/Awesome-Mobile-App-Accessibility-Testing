@@ -70,7 +70,7 @@ Commercial cloud-hosted Mobile App Accessibility Testing suites sorted in descen
 Curated open-source frameworks, testing harnesses, and research prototypes for mobile accessibility audits, sorted in descending order by GitHub stargazers.
 
 ### 1. Google Accessibility Test Framework for Android
-[![GitHub Stars](https://img.shields.io/github/stars/google/Accessibility-Test-Framework-for-Android?style=social&color=white)](https://github.com/google/Accessibility-Test-Framework-for-Android/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/google/Accessibility-Test-Framework-for-Android?style=social&color=white)](https://github.com/google/Accessibility-Test-Framework-for-Android/stargazers)
 - **Repository:** [google/Accessibility-Test-Framework-for-Android](https://github.com/google/Accessibility-Test-Framework-for-Android)
 - **Stack:** Java ☕ • Android • Espresso • Robolectric
 - **License:** Apache-2.0
@@ -81,7 +81,7 @@ Curated open-source frameworks, testing harnesses, and research prototypes for m
   - Direct, one-line integration into Espresso UI suites (`AccessibilityChecks.enable()`) for automated continuous regression tests.
 
 ### 2. GTXiLib (iOS)
-[![GitHub Stars](https://img.shields.io/github/stars/google/GTXiLib?style=social&color=white)](https://github.com/google/GTXiLib/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/google/GTXiLib?style=social&color=white)](https://github.com/google/GTXiLib/stargazers)
 - **Repository:** [google/GTXiLib](https://github.com/google/GTXiLib)
 - **Stack:** Objective-C 🍏 • Swift • CocoaPods • XCTest
 - **License:** Apache-2.0
@@ -92,7 +92,7 @@ Curated open-source frameworks, testing harnesses, and research prototypes for m
   - Extensible check block system allowing teams to register custom enterprise rules (e.g., verifying accessibility elements avoid raw image file extensions).
 
 ### 3. A11yUITests (iOS)
-[![GitHub Stars](https://img.shields.io/github/stars/rwapp/A11yUITests?style=social&color=white)](https://github.com/rwapp/A11yUITests/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/rwapp/A11yUITests?style=social&color=white)](https://github.com/rwapp/A11yUITests/stargazers)
 - **Repository:** [rwapp/A11yUITests](https://github.com/rwapp/A11yUITests)
 - **Stack:** Swift 🦅 • XCUITest • iOS
 - **License:** MIT
@@ -103,7 +103,7 @@ Curated open-source frameworks, testing harnesses, and research prototypes for m
   - Validates accessibility element labeling, trait conflicts, and screen element reachability with clean assertions.
 
 ### 4. GSCXScanner (iOS)
-[![GitHub Stars](https://img.shields.io/github/stars/google/GSCXScanner?style=social&color=white)](https://github.com/google/GSCXScanner/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/google/GSCXScanner?style=social&color=white)](https://github.com/google/GSCXScanner/stargazers)
 - **Repository:** [google/GSCXScanner](https://github.com/google/GSCXScanner)
 - **Stack:** Objective-C 🍏 • GTXiLib • iOS
 - **License:** Apache-2.0
@@ -114,7 +114,7 @@ Curated open-source frameworks, testing harnesses, and research prototypes for m
   - Allows engineers and designers to catch accessibility regressions during ad-hoc manual testing sessions before staging release.
 
 ### 5. Deque axe-android
-[![GitHub Stars](https://img.shields.io/github/stars/dequelabs/axe-android?style=social&color=white)](https://github.com/dequelabs/axe-android/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/dequelabs/axe-android?style=social&color=white)](https://github.com/dequelabs/axe-android/stargazers)
 - **Repository:** [dequelabs/axe-android](https://github.com/dequelabs/axe-android)
 - **Stack:** Java ☕ • Android SDK • WCAG
 - **License:** LGPL-3.0
@@ -125,7 +125,7 @@ Curated open-source frameworks, testing harnesses, and research prototypes for m
   - Serves as an open reference implementation for integrating accessibility checks into Gradle test pipelines.
 
 ### 6. US Department of Labor Mobile Test Scripts
-[![GitHub Stars](https://img.shields.io/github/stars/USDepartmentofLabor/Mobile-Accessibility-Test-Script?style=social&color=white)](https://github.com/USDepartmentofLabor/Mobile-Accessibility-Test-Script/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/USDepartmentofLabor/Mobile-Accessibility-Test-Script?style=social&color=white)](https://github.com/USDepartmentofLabor/Mobile-Accessibility-Test-Script/stargazers)
 - **Repository:** [USDepartmentofLabor/Mobile-Accessibility-Test-Script](https://github.com/USDepartmentofLabor/Mobile-Accessibility-Test-Script)
 - **Stack:** Markdown 📝 • Section 508 Guidelines • iOS / Android
 - **License:** Public Domain (US Federal Government)
@@ -136,7 +136,7 @@ Curated open-source frameworks, testing harnesses, and research prototypes for m
   - Indispensable benchmark for public sector vendors and enterprise QA teams preparing compliance VPAT documentation.
 
 ### 7. In The Pocket Mobile Accessibility Guide & Samples
-[![GitHub Stars](https://img.shields.io/github/stars/inthepocket/mobile-accessibility?style=social&color=white)](https://github.com/inthepocket/mobile-accessibility/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/inthepocket/mobile-accessibility?style=social&color=white)](https://github.com/inthepocket/mobile-accessibility/stargazers)
 - **Repository:** [inthepocket/mobile-accessibility](https://github.com/inthepocket/mobile-accessibility)
 - **Stack:** Kotlin 🤖 • Swift 🍏 • Jetpack Compose • SwiftUI
 - **License:** MIT
@@ -147,7 +147,7 @@ Curated open-source frameworks, testing harnesses, and research prototypes for m
   - Ideal companion tool for engineering teams establishing mobile accessibility design systems and automated UI audits.
 
 ### 8. AccessDroid
-[![GitHub Stars](https://img.shields.io/github/stars/wsong-nj/AccessDroid?style=social&color=white)](https://github.com/wsong-nj/AccessDroid/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/wsong-nj/AccessDroid?style=social&color=white)](https://github.com/wsong-nj/AccessDroid/stargazers)
 - **Repository:** [wsong-nj/AccessDroid](https://github.com/wsong-nj/AccessDroid)
 - **Stack:** Python 🐍 • Android • Semantics Trees • ADB
 - **License:** Open Source (GPL-3.0 / Zenodo)
